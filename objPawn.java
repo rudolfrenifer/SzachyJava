@@ -14,7 +14,7 @@ public class objPawn extends objChessPieces
 		if ((currentPlayer == 1 && desRow >= startRow) || (currentPlayer == 2 && desRow <= startRow)) //If moving in wrong direction
 		{
 			
-			strErrorMsg = "Nie można ruszyć się w tym kierunku";
+			strErrorMsg = "Nie mozna ruszyc sie w tym kierunku";
 			legalMove = false;
 			
 		}
@@ -30,7 +30,7 @@ public class objPawn extends objChessPieces
 					if (playerMatrix[desRow][desColumn] == 0) 
 					{
 						
-						strErrorMsg = "Jeśli pionek zbija przeciwnika, może poruszać się tylko na skos";
+						strErrorMsg = "Jesli pionek zbija przeciwnika, moze poruszac sie tylko na skos";
 						legalMove = false;
 						
 					}
@@ -39,7 +39,7 @@ public class objPawn extends objChessPieces
 				else
 				{
 					
-					strErrorMsg = "Nie można poruszayć się tak daleko";
+					strErrorMsg = "Nie mozna poruszayc sie tak daleko";
 					legalMove = false;
 					
 				}
@@ -48,7 +48,7 @@ public class objPawn extends objChessPieces
 			else
 			{
 				
-				strErrorMsg = "Nie można poruszayć się tak daleko";
+				strErrorMsg = "Nie mozna poruszayc sie tak daleko";
 				legalMove = false;
 				
 			}
@@ -63,7 +63,7 @@ public class objPawn extends objChessPieces
 				if (playerPawnStart[currentPlayer - 1] != startRow)
 				{
 			
-				strErrorMsg = "Nie można poruszayć się tak daleko";
+				strErrorMsg = "Nie mozna poruszac sie tak daleko";
 				legalMove = false;
 			
 				}
@@ -72,7 +72,7 @@ public class objPawn extends objChessPieces
 			else
 			{
 				
-				strErrorMsg = "Nie można poruszayć się tak daleko";				
+				strErrorMsg = "Nie mozna poruszac sie tak daleko";				
 				legalMove = false;
 				
 			}
