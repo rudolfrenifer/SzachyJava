@@ -21,7 +21,7 @@ public class objQueen extends objChessPieces
 		else
 		{
 			
-			strErrorMsg = "Królowa może poruszać się w prostej linii w kazdym kierunku";
+			strErrorMsg = "Krolowa moze poruszac sie w prostej linii w kazdym kierunku";
 			return false;
 			
 		}
