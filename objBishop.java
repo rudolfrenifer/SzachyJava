@@ -12,7 +12,7 @@ public class objBishop extends objChessPieces
 		if (startRow == desRow || startColumn == desColumn) 
 		{
 			
-			strErrorMsg = "Goniec może poruszać się jedynie na skos";
+			strErrorMsg = "Goniec moze poruszac sie jedynie na skos";
 			return false;
 			
 		}
