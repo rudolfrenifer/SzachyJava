@@ -46,7 +46,7 @@ public class objKing extends objChessPieces
 		else
 		{
 			
-			strErrorMsg = "Król może poruszać się o jedno pole w kazdym kierunku";
+			strErrorMsg = "Krol moze poruszac sie o jedno pole w kazdym kierunku";
 			return false;
 			
 		}
