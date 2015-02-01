@@ -10,7 +10,7 @@ public class objKnight extends objChessPieces
 		
 		finalDesRow = desRow;
 		finalDesColumn = desColumn;
-		strErrorMsg = "Skoczek może poruszać się ruchem w kształcie literki L";
+		strErrorMsg = "Skoczek moze poruszac sie ruchem w ksztalcie literki L";
 		
 		if (desRow == (startRow - 2) && desColumn == (startColumn - 1))
 		{
