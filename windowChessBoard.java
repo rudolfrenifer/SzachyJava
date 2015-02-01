@@ -10,7 +10,7 @@ public class windowChessBoard extends objChessBoard implements MouseListener, Mo
 	private final int refreshRate = 5; 
 	
 	private Image[][] imgPlayer = new Image[2][6];
-	private String[] strPlayerName = {"Piotr", "Michał"};
+	private String[] strPlayerName = {"Piotr", "Michal"};
 	private String strStatusMsg = "";
 	private objCellMatrix cellMatrix = new objCellMatrix();
 	private int currentPlayer = 1, startRow = 0, startColumn = 0, pieceBeingDragged = 0;
@@ -37,15 +37,15 @@ public class windowChessBoard extends objChessBoard implements MouseListener, Mo
 		
 		if (hasWon)
 		{
-			return "Gratulacje " + strPlayerName[currentPlayer - 1] + ", wygrałeś grę!";
+			return "Gratulacje " + strPlayerName[currentPlayer - 1] + ", wygrales gre!";
 		}
 		else if (firstTime)
 		{
-			return "" + strPlayerName[0] + " grasz czerwonymi, " + strPlayerName[1] + " grasz niebieskimi. Kliknij Nową Grę aby rozpocząć";
+			return "" + strPlayerName[0] + " grasz czerwonymi, " + strPlayerName[1] + " grasz niebieskimi. Kliknij Nowa Gra aby rozpoczac";
 		}
 		else
 		{
-			return "" + strPlayerName[currentPlayer - 1] + " twój ruch";
+			return "" + strPlayerName[currentPlayer - 1] + " twoj ruch";
 		}
 		
 	}		 
@@ -146,7 +146,7 @@ public class windowChessBoard extends objChessBoard implements MouseListener, Mo
 		
 		if (cellMatrix.getPlayerCell(desRow,desColumn) == currentPlayer)
 		{
-			strStatusMsg = "Nie możesz wykonać takiego ruchu";
+			strStatusMsg = "Nie mozesz wykonac takiego ruchu";
 		}
 		else
 		{
@@ -209,9 +209,9 @@ public class windowChessBoard extends objChessBoard implements MouseListener, Mo
 				boolean canPass = false;
 				int newPiece = 2;
 				String strNewPiece = "Rock";
-				String[] strPieces = {"Wieża","Skoczek","Goniec","Królowa"};
-				JOptionPane digBox = new JOptionPane("Wybierz na co chcesz wymienić pionka", JOptionPane.QUESTION_MESSAGE, JOptionPane.OK_CANCEL_OPTION, null, strPieces, "Rock");
-				JDialog dig = digBox.createDialog(null, "dotarłeś do końca planszy");
+				String[] strPieces = {"Wieza","Skoczek","Goniec","Krolowa"};
+				JOptionPane digBox = new JOptionPane("Wybierz na co chcesz wymienic pionka", JOptionPane.QUESTION_MESSAGE, JOptionPane.OK_CANCEL_OPTION, null, strPieces, "Rock");
+				JDialog dig = digBox.createDialog(null, "dotarles do konca planszy");
 				
 				do
 				{					
