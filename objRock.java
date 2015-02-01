@@ -11,7 +11,7 @@ public class objRock extends objChessPieces
 		if (startRow != desRow && startColumn != desColumn) 
 		{
 			
-			strErrorMsg = "Wieża może poruszać się tylko pionowo albo poziomo";
+			strErrorMsg = "Wieza moze poruszac sie tylko pionowo albo poziomo";
 			return false;
 			
 		}
